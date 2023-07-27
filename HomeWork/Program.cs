@@ -34,11 +34,11 @@ void Task43()
     double k1 = MyLibClass.Input("Введите значение для k1: ");
     double k2 = MyLibClass.Input("Введите значение для k2: ");
 
-    double x = (b2 - b1)/(k1-k2);
+    double x = (b2 - b1) / (k1 - k2);
     double y = k1 * x + b1;
 
     Console.WriteLine($"Точка пересечения двух прямых: A({Math.Round(x, 2)}; {Math.Round(y, 2)})");
-    
+
 
 
 
