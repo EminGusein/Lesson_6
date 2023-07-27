@@ -24,8 +24,30 @@ void Task41()
 
 }
 
+void Task43()
+{
+    // Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, 
+    // заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
+
+    double b1 = MyLibClass.Input("Введите значение для b1: ");
+    double b2 = MyLibClass.Input("Введите значение для b2: ");
+    double k1 = MyLibClass.Input("Введите значение для k1: ");
+    double k2 = MyLibClass.Input("Введите значение для k2: ");
+
+    double x = (b2 - b1)/(k1-k2);
+    double y = k1 * x + b1;
+
+    Console.WriteLine($"Точка пересечения двух прямых: A({Math.Round(x, 2)}; {Math.Round(y, 2)})");
+    
+
+
+
+
+}
+
+
 Console.Clear();
-Task41();
+Task43();
 
 
 
